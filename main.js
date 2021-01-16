@@ -949,9 +949,11 @@ class HeaderComponent {
         this.auth = auth;
         this.router = router;
         this.isAuthenticated = false;
+        this.isLoginPage = true;
     }
     ngOnInit() {
         this.isAuthenticated = this.auth.isAuthenticated();
+        this.isLoginPage = this.router.url === '/';
     }
     logout() {
         this.auth.logout();
@@ -982,7 +984,7 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isAuthenticated);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isAuthenticated && !ctx.isLoginPage);
     } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_3__["MatToolbar"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButton"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__["MatMenuTrigger"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIcon"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__["MatMenu"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__["MatMenuItem"]], styles: [".app-header[_ngcontent-%COMP%] {\n  padding: 40px;\n  height: auto;\n}\n\n.app-header-title[_ngcontent-%COMP%] {\n  flex: 1;\n  text-align: center;\n}\n\n.app-header-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 0;\n  font: initial;\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\n  font-size: 50px;\n  font-weight: bold;\n}\n\n.app-header-title[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  font-size: inherit;\n  font-size: 30px;\n}\n\n.app-header-profile[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-right: -30px;\n}\n\n.example-spacer[_ngcontent-%COMP%] {\n  flex: 1 1 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLFlBQVk7QUFDaEI7O0FBQ0k7RUFFSSxPQUFPO0VBQ1Asa0JBQWtCO0FBQzFCOztBQUpLO0VBTU8sU0FBUztFQUNULGFBQWE7RUFDYixpREFBaUQ7RUFDakQsZUFBZTtFQUNmLGlCQUFpQjtBQUU3Qjs7QUFaSztFQWFXLGtCQUFrQjtFQUNsQixlQUFlO0FBRy9COztBQUdJO0VBQ0ksa0JBQWtCO0VBQ2xCLG1CQUFtQjtBQUEzQjs7QUFLQTtFQUNJLGNBQWM7QUFGbEIiLCJmaWxlIjoiaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFwcC1oZWFkZXIge1xyXG4gICAgcGFkZGluZzogNDBweDtcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIFxyXG4gICAgJi10aXRsZSB7XHJcbiAgICAgICAgXHJcbiAgICAgICAgZmxleDogMTtcclxuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblxyXG4gICAgICAgIHAge1xyXG4gICAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICAgIGZvbnQ6IGluaXRpYWw7XHJcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxuICAgICAgICAgICAgZm9udC1zaXplOiA1MHB4O1xyXG4gICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcclxuXHJcbiAgICAgICAgICAgIHNwYW4ge1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgfSAgICAgICAgICAgXHJcbiAgICAgICAgXHJcbiAgICB9XHJcblxyXG4gICAgJi1wcm9maWxlIHsgIFxyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IC0zMHB4OyAgXHJcbiAgICB9XHJcblxyXG59XHJcblxyXG4uZXhhbXBsZS1zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbiAgfSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HeaderComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
