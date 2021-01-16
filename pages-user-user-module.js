@@ -36,10 +36,60 @@ UserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
-/***/ "OtJn":
+/***/ "6kal":
 /*!****************************************************************!*\
-  !*** ./src/app/components/user/gym-list/gym-list.component.ts ***!
+  !*** ./src/app/components/user/schedule/schedule.component.ts ***!
   \****************************************************************/
+/*! exports provided: ScheduleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScheduleComponent", function() { return ScheduleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/components/gym-list/gym-list.component */ "8cFz");
+
+
+
+class ScheduleComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+ScheduleComponent.ɵfac = function ScheduleComponent_Factory(t) { return new (t || ScheduleComponent)(); };
+ScheduleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ScheduleComponent, selectors: [["app-schedule"]], decls: 9, vars: 0, consts: [[1, "app-schedule", "container"], [1, "app-schedule-content"], [1, "app-schedule-content-title"], [1, "app-schedule-content-gymlist"]], template: function ScheduleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Lista de academias");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Selecione uma academia para realizar o agendamento");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "app-gym-list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_1__["GymListComponent"]], styles: [".app-schedule-content[_ngcontent-%COMP%] {\n  padding: 20px;\n}\n\n.app-schedule-content-title[_ngcontent-%COMP%] {\n  margin: 0 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcc2NoZWR1bGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUk7RUFDRSxhQUFhO0FBRG5COztBQUdNO0VBQ0UsY0FBYztBQUF0QiIsImZpbGUiOiJzY2hlZHVsZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hcHAtc2NoZWR1bGUge1xyXG5cclxuICAgICYtY29udGVudCB7XHJcbiAgICAgIHBhZGRpbmc6IDIwcHg7IFxyXG5cclxuICAgICAgJi10aXRsZSB7XHJcbiAgICAgICAgbWFyZ2luOiAwIDIwcHg7XHJcbiAgICAgIH1cclxuICAgIH1cclxufSJdfQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ScheduleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-schedule',
+                templateUrl: './schedule.component.html',
+                styleUrls: ['./schedule.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "8cFz":
+/*!******************************************************************!*\
+  !*** ./src/app/shared/components/gym-list/gym-list.component.ts ***!
+  \******************************************************************/
 /*! exports provided: GymListComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -48,30 +98,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GymListComponent", function() { return GymListComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
 
 
 
 
 
 const _c0 = function () { return ["/user/calendar"]; };
-function GymListComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-header");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-title");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+function GymListComponent_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-header");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-title");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "img", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "img", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const i_r2 = ctx.index;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Academia ", i_r2 + 1, "");
 } }
 class GymListComponent {
@@ -82,22 +134,70 @@ class GymListComponent {
     }
 }
 GymListComponent.ɵfac = function GymListComponent_Factory(t) { return new (t || GymListComponent)(); };
-GymListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: GymListComponent, selectors: [["app-gym-list"]], decls: 3, vars: 1, consts: [[1, "c-gym-list", "container"], [1, "c-gym-list-cards", "grid"], ["class", "p-12 t-6 d-4", 4, "ngFor", "ngForOf"], [1, "p-12", "t-6", "d-4"], ["color", "primary", 3, "routerLink"], ["mat-card-image", "", "src", "https://material.angular.io/assets/img/examples/shiba2.jpg", "alt", "Photo of a Shiba Inu"]], template: function GymListComponent_Template(rf, ctx) { if (rf & 1) {
+GymListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: GymListComponent, selectors: [["app-gym-list"]], decls: 2, vars: 1, consts: [[1, "grid"], ["class", "p-12 t-6 d-3", 4, "ngFor", "ngForOf"], [1, "p-12", "t-6", "d-3"], [3, "routerLink"], ["color", "primary"], ["mat-card-image", "", "src", "https://material.angular.io/assets/img/examples/shiba2.jpg", "alt", "Photo of a Shiba Inu"]], template: function GymListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, GymListComponent_div_2_Template, 6, 3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GymListComponent_div_1_Template, 7, 3, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.typesOfShoes);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCard"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLink"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardImage"]], styles: [".c-gym-list-cards[_ngcontent-%COMP%]   .mat-card[_ngcontent-%COMP%] {\n  max-width: 400px;\n  margin: 20px auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcZ3ltLWxpc3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUc7RUFHRyxnQkFBZ0I7RUFDaEIsaUJBQWlCO0FBSHZCIiwiZmlsZSI6Imd5bS1saXN0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmMtZ3ltLWxpc3Qge1xyXG5cclxuICAmLWNhcmRzIHtcclxuXHJcbiAgICAubWF0LWNhcmQge1xyXG4gICAgICBtYXgtd2lkdGg6IDQwMHB4O1xyXG4gICAgICBtYXJnaW46IDIwcHggYXV0bztcclxuICAgIH1cclxuXHJcbiAgfVxyXG59Il19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_3__["MatCardImage"]], styles: ["a[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 20px;\n  text-decoration: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcZ3ltLWxpc3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUk7RUFDRSxxQkFBcUI7RUFDckIsWUFBWTtFQUNaLHFCQUFxQjtBQUQzQiIsImZpbGUiOiJneW0tbGlzdC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5cclxuICAgIGEge1xyXG4gICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgIG1hcmdpbjogMjBweDtcclxuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgfVxyXG5cclxuICJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](GymListComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'app-gym-list',
                 templateUrl: './gym-list.component.html',
                 styleUrls: ['./gym-list.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "NbPq":
+/*!************************************************************************!*\
+  !*** ./src/app/components/user/my-schedules/my-schedules.component.ts ***!
+  \************************************************************************/
+/*! exports provided: MySchedulesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MySchedulesComponent", function() { return MySchedulesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/components/gym-list/gym-list.component */ "8cFz");
+
+
+
+class MySchedulesComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+MySchedulesComponent.ɵfac = function MySchedulesComponent_Factory(t) { return new (t || MySchedulesComponent)(); };
+MySchedulesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MySchedulesComponent, selectors: [["app-my-schedules"]], decls: 9, vars: 0, consts: [[1, "app-my-schedules", "container"], [1, "app-my-schedules-content"], [1, "app-my-schedules-content-title"], [1, "app-my-schedules-content-gymlist"]], template: function MySchedulesComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Minhas Academias");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Selecione uma academia para visualizar seu agendamento");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "app-gym-list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_1__["GymListComponent"]], styles: [".app-my-schedules-content[_ngcontent-%COMP%] {\n  padding: 20px;\n}\n\n.app-my-schedules-content-title[_ngcontent-%COMP%] {\n  margin: 0 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcbXktc2NoZWR1bGVzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVJO0VBQ0UsYUFBYTtBQURuQjs7QUFHTTtFQUNFLGNBQWM7QUFBdEIiLCJmaWxlIjoibXktc2NoZWR1bGVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFwcC1teS1zY2hlZHVsZXMge1xyXG5cclxuICAgICYtY29udGVudCB7XHJcbiAgICAgIHBhZGRpbmc6IDIwcHg7IFxyXG5cclxuICAgICAgJi10aXRsZSB7XHJcbiAgICAgICAgbWFyZ2luOiAwIDIwcHg7XHJcbiAgICAgIH1cclxuICAgIH1cclxufSJdfQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MySchedulesComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-my-schedules',
+                templateUrl: './my-schedules.component.html',
+                styleUrls: ['./my-schedules.component.scss']
             }]
     }], function () { return []; }, null); })();
 
@@ -118,8 +218,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var src_app_components_user_calendar_calendar_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/components/user/calendar/calendar.component */ "Upw+");
 /* harmony import */ var src_app_components_user_extract_extract_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/components/user/extract/extract.component */ "Gq2t");
-/* harmony import */ var src_app_components_user_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/components/user/gym-list/gym-list.component */ "OtJn");
-/* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user.component */ "3OJA");
+/* harmony import */ var src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/components/user/schedule/schedule.component */ "6kal");
+/* harmony import */ var src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/components/user/my-schedules/my-schedules.component */ "NbPq");
+/* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./user.component */ "3OJA");
+
 
 
 
@@ -131,15 +233,19 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"]
+        component: _user_component__WEBPACK_IMPORTED_MODULE_6__["UserComponent"]
     },
     {
-        path: 'gymlist',
-        component: src_app_components_user_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_4__["GymListComponent"]
+        path: 'schedule',
+        component: src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_4__["ScheduleComponent"]
     },
     {
         path: 'extract',
         component: src_app_components_user_extract_extract_component__WEBPACK_IMPORTED_MODULE_3__["ExtractComponent"]
+    },
+    {
+        path: 'my-schedules',
+        component: src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_5__["MySchedulesComponent"]
     },
     {
         path: 'calendar',
@@ -178,7 +284,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user.component */ "3OJA");
 /* harmony import */ var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/shared.module */ "PCNd");
 /* harmony import */ var src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/components/user/home/home.component */ "yvF8");
-/* harmony import */ var src_app_components_user_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/components/user/gym-list/gym-list.component */ "OtJn");
+/* harmony import */ var src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/components/user/schedule/schedule.component */ "6kal");
+/* harmony import */ var src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/components/user/my-schedules/my-schedules.component */ "NbPq");
+/* harmony import */ var src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/components/gym-list/gym-list.component */ "8cFz");
+
+
 
 
 
@@ -195,13 +305,13 @@ UserModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjecto
             _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
             src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserModule, { declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_6__["GymListComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserModule, { declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"], src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"], src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
         _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
         src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_6__["GymListComponent"]],
+                declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"], src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"], src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"]],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                     _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
@@ -233,8 +343,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const _c0 = function () { return ["/user/extract"]; };
-const _c1 = function () { return ["/user/gymlist"]; };
-const _c2 = function () { return ["/user/calendar"]; };
+const _c1 = function () { return ["/user/schedule"]; };
+const _c2 = function () { return ["/user/my-schedules"]; };
 class HomeComponent {
     constructor() { }
     ngOnInit() {
@@ -275,28 +385,28 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "mat-card", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "mat-icon", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "schedule");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Lista");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Agendar");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " de academias");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Hor\u00E1rio");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "mat-card", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "mat-icon", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "person");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "calendar_today");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Meus");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " Hor\u00E1rios");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " Agendamentos");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
