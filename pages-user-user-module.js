@@ -221,6 +221,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/components/user/schedule/schedule.component */ "6kal");
 /* harmony import */ var src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/components/user/my-schedules/my-schedules.component */ "NbPq");
 /* harmony import */ var _user_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./user.component */ "3OJA");
+/* harmony import */ var src_app_components_user_buy_buy_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/components/user/buy/buy.component */ "bWRY");
+
 
 
 
@@ -233,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _user_component__WEBPACK_IMPORTED_MODULE_6__["UserComponent"]
+        component: _user_component__WEBPACK_IMPORTED_MODULE_6__["UserComponent"],
     },
     {
         path: 'schedule',
@@ -250,6 +252,10 @@ const routes = [
     {
         path: 'calendar',
         component: src_app_components_user_calendar_calendar_component__WEBPACK_IMPORTED_MODULE_2__["CalendarComponent"]
+    },
+    {
+        path: 'buy',
+        component: src_app_components_user_buy_buy_component__WEBPACK_IMPORTED_MODULE_7__["BuyComponent"]
     }
 ];
 class UserRoutingModule {
@@ -287,6 +293,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/components/user/schedule/schedule.component */ "6kal");
 /* harmony import */ var src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/components/user/my-schedules/my-schedules.component */ "NbPq");
 /* harmony import */ var src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/components/gym-list/gym-list.component */ "8cFz");
+/* harmony import */ var src_app_components_user_buy_dialog_confirm_purchase_dialog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/components/user/buy/dialog/confirm-purchase-dialog */ "Vfck");
+
 
 
 
@@ -304,18 +312,36 @@ UserModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjecto
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
             _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
             src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserModule, { declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"], src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"], src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+        ], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](UserModule, { declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"],
+        src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+        src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"],
+        src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"],
+        src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"],
+        src_app_components_user_buy_dialog_confirm_purchase_dialog__WEBPACK_IMPORTED_MODULE_9__["ConfirmPurchaseDialog"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
         _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
-        src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]] }); })();
+        src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]], exports: [src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                declarations: [_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"], src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"], src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"], src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"]],
+                declarations: [
+                    _user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"],
+                    src_app_components_user_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+                    src_app_components_user_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_6__["ScheduleComponent"],
+                    src_app_components_user_my_schedules_my_schedules_component__WEBPACK_IMPORTED_MODULE_7__["MySchedulesComponent"],
+                    src_app_shared_components_gym_list_gym_list_component__WEBPACK_IMPORTED_MODULE_8__["GymListComponent"],
+                    src_app_components_user_buy_dialog_confirm_purchase_dialog__WEBPACK_IMPORTED_MODULE_9__["ConfirmPurchaseDialog"]
+                ],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                     _user_routing_module__WEBPACK_IMPORTED_MODULE_2__["UserRoutingModule"],
                     src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]
+                ],
+                exports: [
+                    src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]
+                ],
+                entryComponents: [
+                    src_app_components_user_buy_dialog_confirm_purchase_dialog__WEBPACK_IMPORTED_MODULE_9__["ConfirmPurchaseDialog"]
                 ]
             }]
     }], null, null); })();
@@ -343,15 +369,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const _c0 = function () { return ["/user/extract"]; };
-const _c1 = function () { return ["/user/schedule"]; };
-const _c2 = function () { return ["/user/my-schedules"]; };
+const _c1 = function () { return ["/user/buy"]; };
+const _c2 = function () { return ["/user/schedule"]; };
+const _c3 = function () { return ["/user/my-schedules"]; };
 class HomeComponent {
     constructor() { }
     ngOnInit() {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home-user"]], decls: 38, vars: 6, consts: [[1, "page-home", "container"], [1, "page-home-cards", "grid"], [1, "p-12", "t-6", "d-3"], [3, "routerLink"], [1, "page-home-cards-saldo"], ["aria-hidden", "false", "aria-label", "Example home icon"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home-user"]], decls: 38, vars: 8, consts: [[1, "app-home-user", "container"], [1, "app-home-user-cards", "grid"], [1, "p-12", "t-6", "d-3"], [3, "routerLink"], [1, "app-home-user-cards-saldo"], ["aria-hidden", "false", "aria-label", "Example home icon"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -369,7 +396,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "mat-icon", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "add");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -414,12 +441,14 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c0));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2));
-    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"]], styles: [".page-home-cards-saldo[_ngcontent-%COMP%] {\n  font: initial;\n  font-family: Roboto, Roboto, \"Helvetica Neue\", sans-serif;\n  font-size: 30px;\n  font-weight: bold;\n  line-height: 65px;\n}\n\n.page-home-cards[_ngcontent-%COMP%] {\n  padding: 40px;\n  width: 100%;\n}\n\n.page-home-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.page-home-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]     .mat-card {\n  width: 70%;\n  margin: auto;\n  background-color: #7b1fa2;\n  height: 100px;\n  margin-bottom: 40px;\n}\n\n.page-home-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]     .mat-icon {\n  width: 100%;\n  text-align: center;\n  font-size: 60px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJSTtFQUNFLGFBQWE7RUFDYix5REFBeUQ7RUFDekQsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixpQkFBaUI7QUFIdkI7O0FBTUU7RUFDRSxhQUFhO0VBQ2IsV0FBVztBQUhmOztBQUNHO0VBS0csa0JBQWtCO0FBRnhCOztBQUhHO0VBUUssVUFBVTtFQUNWLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjtBQUQzQjs7QUFYRztFQWdCTyxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLGVBQ0o7QUFGTiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5wYWdlLWhvbWUge1xyXG5cclxuICAmLWNhcmRzIHtcclxuICAgICYtc2FsZG8ge1xyXG4gICAgICBmb250OiBpbml0aWFsO1xyXG4gICAgICBmb250LWZhbWlseTogUm9ib3RvLCBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxuICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgICAgbGluZS1oZWlnaHQ6IDY1cHg7XHJcbiAgICB9XHJcbiAgfVxyXG4gICYtY2FyZHMge1xyXG4gICAgcGFkZGluZzogNDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG5cclxuICAgIGRpdiB7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHJcbiAgICAgIDo6bmctZGVlcCAubWF0LWNhcmQge1xyXG4gICAgICAgIHdpZHRoOiA3MCU7XHJcbiAgICAgICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM3YjFmYTI7XHJcbiAgICAgICAgaGVpZ2h0OiAxMDBweDtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiA0MHB4O1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgOjpuZy1kZWVwIC5tYXQtaWNvbiB7XHJcbiAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICAgIGZvbnQtc2l6ZTogNjBweFxyXG4gICAgICB9XHJcbiAgICB9XHJcblxyXG4gIH1cclxuXHJcblxyXG59Il19 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c2));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c3));
+    } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"]], styles: [".app-home-user-cards-saldo[_ngcontent-%COMP%] {\n  font: initial;\n  font-family: Roboto, Roboto, \"Helvetica Neue\", sans-serif;\n  font-size: 30px;\n  font-weight: bold;\n  line-height: 65px;\n}\n\n.app-home-user-cards[_ngcontent-%COMP%] {\n  padding: 40px;\n  width: 100%;\n}\n\n.app-home-user-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.app-home-user-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]     .mat-card {\n  width: 70%;\n  margin: auto;\n  background-color: #7b1fa2;\n  height: 100px;\n  margin-bottom: 40px;\n}\n\n.app-home-user-cards[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]     .mat-icon {\n  width: 100%;\n  text-align: center;\n  font-size: 60px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJSTtFQUNFLGFBQWE7RUFDYix5REFBeUQ7RUFDekQsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixpQkFBaUI7QUFIdkI7O0FBTUU7RUFDRSxhQUFhO0VBQ2IsV0FBVztBQUhmOztBQUNHO0VBS0csa0JBQWtCO0FBRnhCOztBQUhHO0VBUUssVUFBVTtFQUNWLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjtBQUQzQjs7QUFYRztFQWdCTyxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLGVBQ0o7QUFGTiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5hcHAtaG9tZS11c2VyIHtcclxuXHJcbiAgJi1jYXJkcyB7XHJcbiAgICAmLXNhbGRvIHtcclxuICAgICAgZm9udDogaW5pdGlhbDtcclxuICAgICAgZm9udC1mYW1pbHk6IFJvYm90bywgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIHNhbnMtc2VyaWY7XHJcbiAgICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgIGxpbmUtaGVpZ2h0OiA2NXB4O1xyXG4gICAgfVxyXG4gIH1cclxuICAmLWNhcmRzIHtcclxuICAgIHBhZGRpbmc6IDQwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuXHJcbiAgICBkaXYge1xyXG4gICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblxyXG4gICAgICA6Om5nLWRlZXAgLm1hdC1jYXJkIHtcclxuICAgICAgICB3aWR0aDogNzAlO1xyXG4gICAgICAgIG1hcmdpbjogYXV0bztcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjN2IxZmEyO1xyXG4gICAgICAgIGhlaWdodDogMTAwcHg7XHJcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogNDBweDtcclxuICAgICAgfVxyXG4gICAgXHJcbiAgICAgIDo6bmctZGVlcCAubWF0LWljb24ge1xyXG4gICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICBmb250LXNpemU6IDYwcHhcclxuICAgICAgfVxyXG4gICAgfVxyXG5cclxuICB9XHJcblxyXG5cclxufSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
